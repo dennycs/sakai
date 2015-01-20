@@ -20,12 +20,7 @@
   <inceptionYear>2008</inceptionYear>
 
   <properties>
-    <wicket.version>1.4.23</wicket.version>
-    <log4j.version>1.2.14</log4j.version>
-    <twitter4j.version>3.0.5</twitter4j.version>
-    <wicketstuff.objectautocomplete.version>1.4.21</wicketstuff.objectautocomplete.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <yuicompressor.plugin.version>1.2</yuicompressor.plugin.version>
   </properties>
 
   <modules>
@@ -90,32 +85,35 @@
       <dependency>
         <groupId>org.twitter4j</groupId>
         <artifactId>twitter4j-core</artifactId>
-        <version>${twitter4j.version}</version>
+        <version>3.0.5</version>
       </dependency>
+      
+      
       <dependency>
-        <groupId>org.apache.wicket</groupId>
-        <artifactId>wicket</artifactId>
-        <version>${wicket.version}</version>
-      </dependency>
+		<groupId>org.apache.wicket</groupId>
+		<artifactId>wicket</artifactId>
+		<version>6.18.0</version>
+		<type>pom</type>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.wicket</groupId>
+		<artifactId>wicket-spring</artifactId>
+		<version>6.18.0</version>
+	</dependency>
+
+      
       <dependency>
         <groupId>org.apache.wicket</groupId>
         <artifactId>wicket-extensions</artifactId>
-        <version>${wicket.version}</version>
+        <version>6.18.0</version>
       </dependency>
-      <dependency>
-        <groupId>org.apache.wicket</groupId>
-        <artifactId>wicket-spring</artifactId>
-        <version>${wicket.version}</version>
-      </dependency>
+      
+      
+      
       <dependency>
         <groupId>org.wicketstuff</groupId>
-        <artifactId>htmlvalidator</artifactId>
-        <version>${wicketstuff.htmlvalidator.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.wicketstuff</groupId>
-        <artifactId>objectautocomplete</artifactId>
-        <version>${wicketstuff.objectautocomplete.version}</version>
+        <artifactId>wicketstuff-objectautocomplete</artifactId>
+        <version>6.18.0</version>
       </dependency>
       <dependency>
         <groupId>org.sakaiproject</groupId>
@@ -125,7 +123,7 @@
       <dependency>
         <groupId>log4j</groupId>
         <artifactId>log4j</artifactId>
-        <version>${log4j.version}</version>
+        <version>1.2.14</version>
         <scope>provided</scope>
       </dependency>
       <dependency>

@@ -18,7 +18,7 @@ package org.sakaiproject.profile2.tool.components;
 import org.apache.wicket.Component;
 import org.apache.wicket.extensions.ajax.markup.html.AjaxLazyLoadPanel;
 import org.apache.wicket.markup.html.IHeaderContributor;
-import org.apache.wicket.markup.html.IHeaderResponse;
+import org.apache.wicket.markup.head.IHeaderResponse;
 
 /**
  * A Sakai-specific extension to the built in AjaxLazyLoadPanel that allows javascript to be run after its loaded.
